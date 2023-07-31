@@ -2,7 +2,7 @@ $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 command: >-
   python 
   train.py
-  --diabetes-csv ${{inputs.training_data}}
+  --training_data-csv ${{inputs.training_data}}
 inputs:
   training_data: 
     type: uri_folder 
@@ -11,4 +11,4 @@ inputs:
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:mark55
 experiment_name: demo1
-description: Challenge1:Create an Azure Machine Learning job 
+description: Create an Azure Machine Learning job 
