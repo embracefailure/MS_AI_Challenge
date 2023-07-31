@@ -1,8 +1,8 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code: model
 command: >-
   python 
   train.py
-  --training_data-csv ${{inputs.training_data}}
 inputs:
   training_data: 
     type: uri_folder 
@@ -12,3 +12,4 @@ environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:mark55
 experiment_name: demo1
 description: Create an Azure Machine Learning job 
+
