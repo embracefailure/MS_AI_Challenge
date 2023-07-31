@@ -9,6 +9,6 @@ inputs:
     path: azureml:diabetes-dev-folder-2:1
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:aml-instance
+compute: azureml:mark55
 experiment_name: demo1
 description: Challenge1:Create an Azure Machine Learning job 
